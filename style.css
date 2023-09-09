@@ -1,0 +1,115 @@
+/* 
+Importing font 
+font-family : Poppins 
+font-weigth: 400
+file : assets/fonts/Popppins-Regular.ttf
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+body{ 
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 16px;
+    height: 100vh;
+    background: linear-gradient(139deg, #c13e3e 0%, #e6b332 100%);
+    color: #000000;
+}
+
+
+.heading{
+    margin: 40px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    font-family: 'Poppins',sans-serif;
+    font-size:40px;
+    font-style: normal;
+    color : #ffffff;
+    /* font-weight: 400; */
+
+}
+.line{
+    border: 1px solid #ffffff;
+    width: 30px;
+}
+
+.content-adder{
+    
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+   
+}
+
+.content{
+
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+.note{
+ 
+    width: 30vw;
+    border: none;
+    font-size: large;
+}
+.add{
+    background-color: #e9993d;
+}
+.del{
+    background-color: #ec2c2c;
+}
+.tick{
+    background-color: #00FF08;
+}
+
+
+.notes-section {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.note-text{
+    background-color: #ffffff;
+}
+
+
+.done-task{
+    text-decoration-line: line-through;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    body {
+      font-size: 14px; 
+    }
+    .content-adder {
+    
+      align-items: center;
+    }
+    .note {
+      width: 60%; 
+    }
+  }
+  @media screen and (min-width: 769px) {
+    .content-adder {
+      padding: 20px; 
+    }
+    .note {
+      width: 30vw;
+    }
+  }
